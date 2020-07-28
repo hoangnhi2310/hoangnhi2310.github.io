@@ -11,7 +11,7 @@ data_dir = tf.keras.utils.get_file(origin=dataset_url,
                                    fname='giaydep', 
                                    untar=True)
 data_dir = pathlib.Path(data_dir)
-image_count = len(list(data_dir.glob('*/*.JPG')))
+image_count = len(list(data_dir.glob('*/*')))
 print(image_count)
 #%%
 giay = list(data_dir.glob('giay/*'))
@@ -36,13 +36,13 @@ PIL.Image.open(str(giay[1]))
 #%% load from local
 import tensorflow as tf
 import pathlib
-path = "D:\hoangnhi2310.github.io\hoangnhi2310.github.io"
+path = "D:\hoangnhi2310.github.io\hoangnhi2310.github.io\giaydep.tar"
 data_dir = tf.keras.utils.get_file(origin=path, 
                                    fname='giaydep', 
                                    untar=True)
 data_dir = pathlib.Path(data_dir)
 list_ds = tf.data.Dataset.list_files(str(data_dir/'*/*'), shuffle=False)
-image_count = len(list(data_dir.glob('*/*.JPG')))
+image_count = len(list(data_dir.glob('*/*')))
 print(image_count)
 #%%
 list_ds = list_ds.shuffle(image_count, reshuffle_each_iteration=False)
