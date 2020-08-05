@@ -2,7 +2,7 @@
 """
 Created on Fri Jul 24 15:02:46 2020
 
-@author: ASUS
+@author: Hoangnhi
 """
 import tensorflow as tf
 import pathlib

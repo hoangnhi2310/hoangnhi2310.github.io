@@ -2,7 +2,7 @@
 """
 Created on Mon Jul 27 15:17:15 2020
 
-@author: ASUS
+@author: Hoangnhi
 """
 import tensorflow as tf
 from tensorflow.keras.models import load_model
