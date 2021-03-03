@@ -1,0 +1,45 @@
+Request:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hot="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <hot:HotelDetailsReq TargetBranch="P7144984" ReturnMediaLinks="true" ReturnGuestReviews="true">
+            <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+            <hot:HotelProperty HotelChain="CP" HotelCode="02074">
+            </hot:HotelProperty>
+            <hot:HotelDetailsModifiers RateRuleDetail="Complete" NumberOfAdults="2" NumberOfRooms="1" PreferredCurrency="USD">
+                <hot:HotelStay>
+                    <hot:CheckinDate>2021-03-03</hot:CheckinDate>
+                    <hot:CheckoutDate>2021-03-04</hot:CheckoutDate>
+                </hot:HotelStay>
+            </hot:HotelDetailsModifiers>
+        </hot:HotelDetailsReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+Response:
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP:Body>
+        <hotel:HotelDetailsRsp TransactionId="F5EFCC1A0A0D6A7FFE5823DD32D942D7" ResponseTime="10134" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+            <hotel:RequestedHotelDetails>
+                <hotel:HotelProperty HotelChain="CP" HotelCode="02074" HotelLocation="BFK" Name="CROWNE PLAZA AIRPORT CONV CTR">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>15500 EAST 40TH AVENUE </hotel:Address>
+                        <hotel:Address>DENVER CO 80239 US </hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:PhoneNumber Type="Business" Number="1-303-3719494"/>
+                    <common_v50_0:PhoneNumber Type="Fax" Number="1-303-3719528"/>
+                    <common_v50_0:Distance Units="KM" Value="11" Direction="NW"/>
+                    <hotel:HotelRating RatingProvider="AAA">
+                        <hotel:Rating>3</hotel:Rating>
+                    </hotel:HotelRating>
+                </hotel:HotelProperty>
+                <hotel:HotelDetailItem Name="CheckInTime">
+                    <hotel:Text>3PM</hotel:Text>
+                </hotel:HotelDetailItem>
+                <hotel:HotelDetailItem Name="CheckOutTime">
+                    <hotel:Text>11AM</hotel:Text>
+                </hotel:HotelDetailItem>
+            </hotel:RequestedHotelDetails>
+        </hotel:HotelDetailsRsp>
+    </SOAP:Body>
+</SOAP:Envelope>

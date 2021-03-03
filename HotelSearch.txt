@@ -1,0 +1,899 @@
+Request:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <hot:HotelSearchAvailabilityReq  LanguageCode="FR-CA" TargetBranch="P7144984" TraceId="trace" xmlns:hot="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+            <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+            <hot:HotelSearchLocation>
+                <com:CoordinateLocation latitude="39.85891" longitude="-104.67326"/>
+                <com:Distance Units="KM" Value="20"/>
+            </hot:HotelSearchLocation>
+            <hot:HotelSearchModifiers NumberOfAdults="1" NumberOfRooms="1" PreferredCurrency="GBP" AvailableHotelsOnly="true" ReturnAmenities="true">
+                <hot:NumberOfChildren Count="1">
+                    <hot:Age>10</hot:Age>
+                </hot:NumberOfChildren>
+            </hot:HotelSearchModifiers>
+            <hot:HotelStay>
+                <hot:CheckinDate>2021-03-03</hot:CheckinDate>
+                <hot:CheckoutDate>2021-03-04</hot:CheckoutDate>
+            </hot:HotelStay>
+        </hot:HotelSearchAvailabilityReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+Response:
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP:Body>
+        <hotel:HotelSearchAvailabilityRsp TraceId="trace" TransactionId="F5EB1C6D0A0D6A7FFE5823DD8D13BDDE" ResponseTime="10809" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+            <common_v50_0:ResponseMessage Code="5504" Type="Warning">"Available Hotels Only" is set to true, in hotel search availability request, some hotels that may match other search criteria, are removed from response.</common_v50_0:ResponseMessage>
+            <common_v50_0:ResponseMessage Code="5244" Type="Warning" ProviderCode="1G">NumberOfChildren modifier is not supported, and has been ignored.</common_v50_0:ResponseMessage>
+            <common_v50_0:NextResultReference ProviderCode="1G">j2AH6KR9tniPYAfopH22eKUDIAAIz4R5ZsgG7A/nrC4FIR4RdW+e9IE5MhyL7cicBse0WUr2MzMLo2M61LxwDDYjqPB+sUHlO2fKtRLA5q/gqDCkIkVHBw==</common_v50_0:NextResultReference>
+            <hotel:ReferencePoint>LAT39.85891LON-104.67326</hotel:ReferencePoint>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="WI" VendorLocationID="B2095" Key="dq9zVf/pWDKAGGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="WI" HotelCode="B2095" HotelLocation="DEN" Name="THE WESTIN DENVER INTL AIRPORT" VendorLocationKey="dq9zVf/pWDKAGGPKCAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="2" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>DENVER CO</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="1" Direction="S"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="20" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="22" AmenityType="HA"/>
+                        <hotel:Amenity Code="23" AmenityType="HA"/>
+                        <hotel:Amenity Code="22" AmenityType="RA"/>
+                        <hotel:Amenity Code="33" AmenityType="HA"/>
+                        <hotel:Amenity Code="47" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="165" AmenityType="HA"/>
+                        <hotel:Amenity Code="269" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="224" AmenityType="HA"/>
+                        <hotel:Amenity Code="71" AmenityType="HA"/>
+                        <hotel:Amenity Code="54" AmenityType="HA"/>
+                        <hotel:Amenity Code="88" AmenityType="RA"/>
+                        <hotel:Amenity Code="76" AmenityType="HA"/>
+                        <hotel:Amenity Code="77" AmenityType="HA"/>
+                        <hotel:Amenity Code="92" AmenityType="RA"/>
+                        <hotel:Amenity Code="142" AmenityType="RA"/>
+                        <hotel:Amenity Code="251" AmenityType="RA"/>
+                        <hotel:Amenity Code="18" AmenityType="RA"/>
+                        <hotel:Amenity Code="85" AmenityType="RA"/>
+                        <hotel:Amenity Code="56" AmenityType="HA"/>
+                        <hotel:Amenity Code="13" AmenityType="RA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD239.00" ApproximateMinimumAmount="GBP175.00" MaximumAmount="USD570.70" ApproximateMaximumAmount="GBP419.00"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="CP" VendorLocationID="02074" Key="dq9zVf/pWDKAHGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="CP" HotelCode="02074" HotelLocation="DEN" Name="CROWNE PLAZA AIRPORT CONV CTR" VendorLocationKey="dq9zVf/pWDKAHGPKCAAAAA==" HotelTransportation="7" ReserveRequirement="Guarantee" ParticipationLevel="4" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>15500 EAST 40TH AVEN</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="18" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="289" AmenityType="HA"/>
+                        <hotel:Amenity Code="913" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="23" AmenityType="HA"/>
+                        <hotel:Amenity Code="175" AmenityType="HA"/>
+                        <hotel:Amenity Code="43" AmenityType="HA"/>
+                        <hotel:Amenity Code="236" AmenityType="HA"/>
+                        <hotel:Amenity Code="47" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="68" AmenityType="RA"/>
+                        <hotel:Amenity Code="58" AmenityType="HA"/>
+                        <hotel:Amenity Code="174" AmenityType="HA"/>
+                        <hotel:Amenity Code="269" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="68" AmenityType="HA"/>
+                        <hotel:Amenity Code="224" AmenityType="HA"/>
+                        <hotel:Amenity Code="107" AmenityType="RA"/>
+                        <hotel:Amenity Code="71" AmenityType="HA"/>
+                        <hotel:Amenity Code="54" AmenityType="HA"/>
+                        <hotel:Amenity Code="66" AmenityType="HA"/>
+                        <hotel:Amenity Code="106" AmenityType="HA"/>
+                        <hotel:Amenity Code="76" AmenityType="HA"/>
+                        <hotel:Amenity Code="77" AmenityType="HA"/>
+                        <hotel:Amenity Code="78" AmenityType="HA"/>
+                        <hotel:Amenity Code="271" AmenityType="HA"/>
+                        <hotel:Amenity Code="251" AmenityType="RA"/>
+                        <hotel:Amenity Code="18" AmenityType="RA"/>
+                        <hotel:Amenity Code="85" AmenityType="RA"/>
+                        <hotel:Amenity Code="102" AmenityType="RA"/>
+                        <hotel:Amenity Code="69" AmenityType="HA"/>
+                        <hotel:Amenity Code="13" AmenityType="RA"/>
+                        <hotel:Amenity Code="264" AmenityType="HA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD189.00" ApproximateMinimumAmount="GBP139.00" MinAmountRateChanged="false" MaximumAmount="USD259.00" ApproximateMaximumAmount="GBP190.00" MaxAmountRateChanged="false"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="HY" VendorLocationID="07320" Key="dq9zVf/pWDKAIGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="HY" HotelCode="07320" HotelLocation="DEN" Name="HYATT HOUSE DENVER AIRPORT" VendorLocationKey="dq9zVf/pWDKAIGPKCAAAAA==" HotelTransportation="7" ReserveRequirement="Other" ParticipationLevel="2" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>DENVER CO</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="10" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="227" AmenityType="HA"/>
+                        <hotel:Amenity Code="913" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="159" AmenityType="HA"/>
+                        <hotel:Amenity Code="33" AmenityType="HA"/>
+                        <hotel:Amenity Code="43" AmenityType="HA"/>
+                        <hotel:Amenity Code="236" AmenityType="HA"/>
+                        <hotel:Amenity Code="47" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="68" AmenityType="RA"/>
+                        <hotel:Amenity Code="59" AmenityType="RA"/>
+                        <hotel:Amenity Code="165" AmenityType="HA"/>
+                        <hotel:Amenity Code="269" AmenityType="HA"/>
+                        <hotel:Amenity Code="103" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="68" AmenityType="HA"/>
+                        <hotel:Amenity Code="42" AmenityType="HA"/>
+                        <hotel:Amenity Code="224" AmenityType="HA"/>
+                        <hotel:Amenity Code="107" AmenityType="RA"/>
+                        <hotel:Amenity Code="71" AmenityType="HA"/>
+                        <hotel:Amenity Code="54" AmenityType="HA"/>
+                        <hotel:Amenity Code="88" AmenityType="RA"/>
+                        <hotel:Amenity Code="78" AmenityType="HA"/>
+                        <hotel:Amenity Code="271" AmenityType="HA"/>
+                        <hotel:Amenity Code="142" AmenityType="RA"/>
+                        <hotel:Amenity Code="251" AmenityType="RA"/>
+                        <hotel:Amenity Code="18" AmenityType="RA"/>
+                        <hotel:Amenity Code="85" AmenityType="RA"/>
+                        <hotel:Amenity Code="274" AmenityType="HA"/>
+                        <hotel:Amenity Code="102" AmenityType="RA"/>
+                        <hotel:Amenity Code="69" AmenityType="HA"/>
+                        <hotel:Amenity Code="13" AmenityType="RA"/>
+                        <hotel:Amenity Code="264" AmenityType="HA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD259.00" ApproximateMinimumAmount="GBP190.00" MinAmountRateChanged="false" MaximumAmount="USD419.00" ApproximateMaximumAmount="GBP308.00" MaxAmountRateChanged="false"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="CY" VendorLocationID="86902" Key="dq9zVf/pWDKAJGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="CY" HotelCode="86902" HotelLocation="DEN" Name="COURTYARD MARRIOTT DENVER ARPT" VendorLocationKey="dq9zVf/pWDKAJGPKCAAAAA==" HotelTransportation="26" ReserveRequirement="Guarantee" ParticipationLevel="4" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>6901 TOWER RD</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="11" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="20" AmenityType="HA"/>
+                        <hotel:Amenity Code="913" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="33" AmenityType="HA"/>
+                        <hotel:Amenity Code="38" AmenityType="HA"/>
+                        <hotel:Amenity Code="47" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="58" AmenityType="HA"/>
+                        <hotel:Amenity Code="165" AmenityType="HA"/>
+                        <hotel:Amenity Code="269" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="68" AmenityType="HA"/>
+                        <hotel:Amenity Code="71" AmenityType="HA"/>
+                        <hotel:Amenity Code="54" AmenityType="HA"/>
+                        <hotel:Amenity Code="88" AmenityType="RA"/>
+                        <hotel:Amenity Code="76" AmenityType="HA"/>
+                        <hotel:Amenity Code="78" AmenityType="HA"/>
+                        <hotel:Amenity Code="142" AmenityType="RA"/>
+                        <hotel:Amenity Code="84" AmenityType="HA"/>
+                        <hotel:Amenity Code="251" AmenityType="RA"/>
+                        <hotel:Amenity Code="18" AmenityType="RA"/>
+                        <hotel:Amenity Code="85" AmenityType="RA"/>
+                        <hotel:Amenity Code="122" AmenityType="RA"/>
+                        <hotel:Amenity Code="102" AmenityType="RA"/>
+                        <hotel:Amenity Code="13" AmenityType="RA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD109.00" ApproximateMinimumAmount="GBP80.00" MaximumAmount="USD174.00" ApproximateMaximumAmount="GBP128.00"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ES" VendorLocationID="52557" Key="dq9zVf/pWDKAKGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="ES" HotelCode="52557" HotelLocation="DEN" Name="EMBASSY SUITES DENVER INTL ARPT" VendorLocationKey="dq9zVf/pWDKAKGPKCAAAAA==" HotelTransportation="26" ReserveRequirement="Guarantee" ParticipationLevel="2" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>DENVER CO</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="11" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="227" AmenityType="HA"/>
+                        <hotel:Amenity Code="20" AmenityType="HA"/>
+                        <hotel:Amenity Code="913" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="43" AmenityType="HA"/>
+                        <hotel:Amenity Code="45" AmenityType="HA"/>
+                        <hotel:Amenity Code="236" AmenityType="HA"/>
+                        <hotel:Amenity Code="47" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="68" AmenityType="RA"/>
+                        <hotel:Amenity Code="59" AmenityType="RA"/>
+                        <hotel:Amenity Code="58" AmenityType="HA"/>
+                        <hotel:Amenity Code="162" AmenityType="HA"/>
+                        <hotel:Amenity Code="269" AmenityType="HA"/>
+                        <hotel:Amenity Code="270" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="68" AmenityType="HA"/>
+                        <hotel:Amenity Code="107" AmenityType="RA"/>
+                        <hotel:Amenity Code="71" AmenityType="HA"/>
+                        <hotel:Amenity Code="54" AmenityType="HA"/>
+                        <hotel:Amenity Code="88" AmenityType="RA"/>
+                        <hotel:Amenity Code="76" AmenityType="HA"/>
+                        <hotel:Amenity Code="78" AmenityType="HA"/>
+                        <hotel:Amenity Code="142" AmenityType="RA"/>
+                        <hotel:Amenity Code="18" AmenityType="RA"/>
+                        <hotel:Amenity Code="122" AmenityType="RA"/>
+                        <hotel:Amenity Code="274" AmenityType="HA"/>
+                        <hotel:Amenity Code="102" AmenityType="RA"/>
+                        <hotel:Amenity Code="69" AmenityType="HA"/>
+                        <hotel:Amenity Code="264" AmenityType="HA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD133.00" ApproximateMinimumAmount="GBP98.00" MaximumAmount="USD173.00" ApproximateMaximumAmount="GBP127.00"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="FN" VendorLocationID="70954" Key="dq9zVf/pWDKALGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="FN" HotelCode="70954" HotelLocation="DEN" Name="FAIRFIELD INN N STES MARRIOTT" VendorLocationKey="dq9zVf/pWDKALGPKCAAAAA==" HotelTransportation="26" ReserveRequirement="Other" ParticipationLevel="4" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>DENVER CO</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="11" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="227" AmenityType="HA"/>
+                        <hotel:Amenity Code="913" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="33" AmenityType="HA"/>
+                        <hotel:Amenity Code="38" AmenityType="HA"/>
+                        <hotel:Amenity Code="47" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="68" AmenityType="RA"/>
+                        <hotel:Amenity Code="58" AmenityType="HA"/>
+                        <hotel:Amenity Code="269" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="68" AmenityType="HA"/>
+                        <hotel:Amenity Code="71" AmenityType="HA"/>
+                        <hotel:Amenity Code="54" AmenityType="HA"/>
+                        <hotel:Amenity Code="88" AmenityType="RA"/>
+                        <hotel:Amenity Code="78" AmenityType="HA"/>
+                        <hotel:Amenity Code="84" AmenityType="HA"/>
+                        <hotel:Amenity Code="251" AmenityType="RA"/>
+                        <hotel:Amenity Code="18" AmenityType="RA"/>
+                        <hotel:Amenity Code="85" AmenityType="RA"/>
+                        <hotel:Amenity Code="102" AmenityType="RA"/>
+                        <hotel:Amenity Code="13" AmenityType="RA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD89.00" ApproximateMinimumAmount="GBP65.00" MaximumAmount="USD114.00" ApproximateMaximumAmount="GBP84.00"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="HG" VendorLocationID="F3403" Key="dq9zVf/pWDKAMGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="HG" HotelCode="F3403" HotelLocation="DEN" Name="HOMEWOOD SUITES DENVER AIRPORT CO" VendorLocationKey="dq9zVf/pWDKAMGPKCAAAAA==" HotelTransportation="7" ReserveRequirement="Other" ParticipationLevel="2" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>6951 N YAMPA ST</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="11" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="227" AmenityType="HA"/>
+                        <hotel:Amenity Code="913" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="33" AmenityType="HA"/>
+                        <hotel:Amenity Code="45" AmenityType="HA"/>
+                        <hotel:Amenity Code="47" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="68" AmenityType="RA"/>
+                        <hotel:Amenity Code="59" AmenityType="RA"/>
+                        <hotel:Amenity Code="58" AmenityType="HA"/>
+                        <hotel:Amenity Code="165" AmenityType="HA"/>
+                        <hotel:Amenity Code="162" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="68" AmenityType="HA"/>
+                        <hotel:Amenity Code="224" AmenityType="HA"/>
+                        <hotel:Amenity Code="107" AmenityType="RA"/>
+                        <hotel:Amenity Code="71" AmenityType="HA"/>
+                        <hotel:Amenity Code="54" AmenityType="HA"/>
+                        <hotel:Amenity Code="88" AmenityType="RA"/>
+                        <hotel:Amenity Code="76" AmenityType="HA"/>
+                        <hotel:Amenity Code="77" AmenityType="HA"/>
+                        <hotel:Amenity Code="78" AmenityType="HA"/>
+                        <hotel:Amenity Code="271" AmenityType="HA"/>
+                        <hotel:Amenity Code="85" AmenityType="RA"/>
+                        <hotel:Amenity Code="102" AmenityType="RA"/>
+                        <hotel:Amenity Code="69" AmenityType="HA"/>
+                        <hotel:Amenity Code="13" AmenityType="RA"/>
+                        <hotel:Amenity Code="264" AmenityType="HA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD79.00" ApproximateMinimumAmount="GBP58.00" MaximumAmount="USD89.00" ApproximateMaximumAmount="GBP65.00"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="HT" VendorLocationID="C6136" Key="dq9zVf/pWDKANGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="HT" HotelCode="C6136" HotelLocation="DEN" Name="HOME2 SUITES DENVER INTL APT" VendorLocationKey="dq9zVf/pWDKANGPKCAAAAA==" HotelTransportation="26" ReserveRequirement="Other" ParticipationLevel="2" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>92 TOWER ROAD</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="11" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="227" AmenityType="HA"/>
+                        <hotel:Amenity Code="913" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="33" AmenityType="HA"/>
+                        <hotel:Amenity Code="47" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="68" AmenityType="RA"/>
+                        <hotel:Amenity Code="58" AmenityType="HA"/>
+                        <hotel:Amenity Code="162" AmenityType="HA"/>
+                        <hotel:Amenity Code="270" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="68" AmenityType="HA"/>
+                        <hotel:Amenity Code="224" AmenityType="HA"/>
+                        <hotel:Amenity Code="107" AmenityType="RA"/>
+                        <hotel:Amenity Code="71" AmenityType="HA"/>
+                        <hotel:Amenity Code="54" AmenityType="HA"/>
+                        <hotel:Amenity Code="88" AmenityType="RA"/>
+                        <hotel:Amenity Code="78" AmenityType="HA"/>
+                        <hotel:Amenity Code="251" AmenityType="RA"/>
+                        <hotel:Amenity Code="18" AmenityType="RA"/>
+                        <hotel:Amenity Code="85" AmenityType="RA"/>
+                        <hotel:Amenity Code="102" AmenityType="RA"/>
+                        <hotel:Amenity Code="69" AmenityType="HA"/>
+                        <hotel:Amenity Code="13" AmenityType="RA"/>
+                        <hotel:Amenity Code="264" AmenityType="HA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD74.00" ApproximateMinimumAmount="GBP54.00" MaximumAmount="USD99.00" ApproximateMaximumAmount="GBP73.00"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="RC" VendorLocationID="E1698" Key="dq9zVf/pWDKAOGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="RC" HotelCode="E1698" HotelLocation="DEN" Name="RESIDENCE INN CONVENT MARRIOTT" VendorLocationKey="dq9zVf/pWDKAOGPKCAAAAA==" HotelTransportation="26" ReserveRequirement="Other" ParticipationLevel="4" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>6762 TOWER ROAD</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="11" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="227" AmenityType="HA"/>
+                        <hotel:Amenity Code="913" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="33" AmenityType="HA"/>
+                        <hotel:Amenity Code="38" AmenityType="HA"/>
+                        <hotel:Amenity Code="43" AmenityType="HA"/>
+                        <hotel:Amenity Code="47" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="68" AmenityType="RA"/>
+                        <hotel:Amenity Code="59" AmenityType="RA"/>
+                        <hotel:Amenity Code="58" AmenityType="HA"/>
+                        <hotel:Amenity Code="162" AmenityType="HA"/>
+                        <hotel:Amenity Code="269" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="224" AmenityType="HA"/>
+                        <hotel:Amenity Code="107" AmenityType="RA"/>
+                        <hotel:Amenity Code="71" AmenityType="HA"/>
+                        <hotel:Amenity Code="54" AmenityType="HA"/>
+                        <hotel:Amenity Code="88" AmenityType="RA"/>
+                        <hotel:Amenity Code="78" AmenityType="HA"/>
+                        <hotel:Amenity Code="142" AmenityType="RA"/>
+                        <hotel:Amenity Code="251" AmenityType="RA"/>
+                        <hotel:Amenity Code="18" AmenityType="RA"/>
+                        <hotel:Amenity Code="85" AmenityType="RA"/>
+                        <hotel:Amenity Code="274" AmenityType="HA"/>
+                        <hotel:Amenity Code="102" AmenityType="RA"/>
+                        <hotel:Amenity Code="13" AmenityType="RA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD154.00" ApproximateMinimumAmount="GBP113.00" MaximumAmount="USD204.00" ApproximateMaximumAmount="GBP150.00"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="XV" VendorLocationID="15234" Key="dq9zVf/pWDKAPGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="XV" HotelCode="15234" HotelLocation="DEN" Name="SPRINGHILL STES ARPT MARRIOTT" VendorLocationKey="dq9zVf/pWDKAPGPKCAAAAA==" HotelTransportation="26" ReserveRequirement="Guarantee" ParticipationLevel="4" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>DENVER CO</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="11" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="7" AmenityType="RA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="227" AmenityType="HA"/>
+                        <hotel:Amenity Code="913" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="22" AmenityType="RA"/>
+                        <hotel:Amenity Code="33" AmenityType="HA"/>
+                        <hotel:Amenity Code="38" AmenityType="HA"/>
+                        <hotel:Amenity Code="43" AmenityType="HA"/>
+                        <hotel:Amenity Code="47" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="68" AmenityType="RA"/>
+                        <hotel:Amenity Code="58" AmenityType="HA"/>
+                        <hotel:Amenity Code="162" AmenityType="HA"/>
+                        <hotel:Amenity Code="269" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="107" AmenityType="RA"/>
+                        <hotel:Amenity Code="88" AmenityType="RA"/>
+                        <hotel:Amenity Code="76" AmenityType="HA"/>
+                        <hotel:Amenity Code="92" AmenityType="RA"/>
+                        <hotel:Amenity Code="78" AmenityType="HA"/>
+                        <hotel:Amenity Code="142" AmenityType="RA"/>
+                        <hotel:Amenity Code="251" AmenityType="RA"/>
+                        <hotel:Amenity Code="18" AmenityType="RA"/>
+                        <hotel:Amenity Code="85" AmenityType="RA"/>
+                        <hotel:Amenity Code="274" AmenityType="HA"/>
+                        <hotel:Amenity Code="102" AmenityType="RA"/>
+                        <hotel:Amenity Code="13" AmenityType="RA"/>
+                        <hotel:Amenity Code="264" AmenityType="HA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD99.00" ApproximateMinimumAmount="GBP73.00" MaximumAmount="USD119.00" ApproximateMaximumAmount="GBP87.00"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="RU" VendorLocationID="F3386" Key="dq9zVf/pWDKAQGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="RU" HotelCode="F3386" HotelLocation="DEN" Name="TRU BY HILTON DENVER AIRPORT CO" VendorLocationKey="dq9zVf/pWDKAQGPKCAAAAA==" HotelTransportation="26" ReserveRequirement="Other" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>6951 N YAMPA ST</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="11" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="227" AmenityType="HA"/>
+                        <hotel:Amenity Code="913" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="33" AmenityType="HA"/>
+                        <hotel:Amenity Code="45" AmenityType="HA"/>
+                        <hotel:Amenity Code="47" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="58" AmenityType="HA"/>
+                        <hotel:Amenity Code="165" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="68" AmenityType="HA"/>
+                        <hotel:Amenity Code="224" AmenityType="HA"/>
+                        <hotel:Amenity Code="107" AmenityType="RA"/>
+                        <hotel:Amenity Code="71" AmenityType="HA"/>
+                        <hotel:Amenity Code="54" AmenityType="HA"/>
+                        <hotel:Amenity Code="66" AmenityType="HA"/>
+                        <hotel:Amenity Code="77" AmenityType="HA"/>
+                        <hotel:Amenity Code="78" AmenityType="HA"/>
+                        <hotel:Amenity Code="85" AmenityType="RA"/>
+                        <hotel:Amenity Code="69" AmenityType="HA"/>
+                        <hotel:Amenity Code="13" AmenityType="RA"/>
+                        <hotel:Amenity Code="264" AmenityType="HA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD69.00" ApproximateMinimumAmount="GBP51.00" MaximumAmount="USD69.00" ApproximateMaximumAmount="GBP51.00"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="HX" VendorLocationID="78973" Key="dq9zVf/pWDKARGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="HX" HotelCode="78973" HotelLocation="DEN" Name="HAMPTON INN DENVER INTL ARPT" VendorLocationKey="dq9zVf/pWDKARGPKCAAAAA==" HotelTransportation="31" ReserveRequirement="Guarantee" ParticipationLevel="2" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>6290 TOWER RD</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="12" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="227" AmenityType="HA"/>
+                        <hotel:Amenity Code="913" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="43" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="58" AmenityType="HA"/>
+                        <hotel:Amenity Code="162" AmenityType="HA"/>
+                        <hotel:Amenity Code="269" AmenityType="HA"/>
+                        <hotel:Amenity Code="270" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="68" AmenityType="HA"/>
+                        <hotel:Amenity Code="107" AmenityType="RA"/>
+                        <hotel:Amenity Code="71" AmenityType="HA"/>
+                        <hotel:Amenity Code="54" AmenityType="HA"/>
+                        <hotel:Amenity Code="78" AmenityType="HA"/>
+                        <hotel:Amenity Code="18" AmenityType="RA"/>
+                        <hotel:Amenity Code="274" AmenityType="HA"/>
+                        <hotel:Amenity Code="69" AmenityType="HA"/>
+                        <hotel:Amenity Code="264" AmenityType="HA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD74.80" ApproximateMinimumAmount="GBP55.00" MaximumAmount="USD98.00" ApproximateMaximumAmount="GBP72.00"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="HY" VendorLocationID="F4719" Key="dq9zVf/pWDKASGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="HY" HotelCode="F4719" HotelLocation="DEN" Name="HYATT PLACE DENVER PENA STATION" VendorLocationKey="dq9zVf/pWDKASGPKCAAAAA==" HotelTransportation="26" ReserveRequirement="Other" ParticipationLevel="2" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>6110 NORTH PANASONIC</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="13" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="227" AmenityType="HA"/>
+                        <hotel:Amenity Code="913" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="47" AmenityType="HA"/>
+                        <hotel:Amenity Code="269" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="68" AmenityType="HA"/>
+                        <hotel:Amenity Code="42" AmenityType="HA"/>
+                        <hotel:Amenity Code="224" AmenityType="HA"/>
+                        <hotel:Amenity Code="92" AmenityType="RA"/>
+                        <hotel:Amenity Code="142" AmenityType="RA"/>
+                        <hotel:Amenity Code="251" AmenityType="RA"/>
+                        <hotel:Amenity Code="18" AmenityType="RA"/>
+                        <hotel:Amenity Code="85" AmenityType="RA"/>
+                        <hotel:Amenity Code="13" AmenityType="RA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD260.10" ApproximateMinimumAmount="GBP191.00" MinAmountRateChanged="false" MaximumAmount="USD384.00" ApproximateMaximumAmount="GBP282.00" MaxAmountRateChanged="false"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="HX" VendorLocationID="60159" Key="dq9zVf/pWDKATGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="HX" HotelCode="60159" HotelLocation="DEN" Name="HAMPTON STS DENVER AIRPORT-GATEWAY" VendorLocationKey="dq9zVf/pWDKATGPKCAAAAA==" HotelTransportation="26" ReserveRequirement="Other" ParticipationLevel="2" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>4310 AIRPORT WAY</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="17" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="227" AmenityType="HA"/>
+                        <hotel:Amenity Code="16" AmenityType="HA"/>
+                        <hotel:Amenity Code="913" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="33" AmenityType="HA"/>
+                        <hotel:Amenity Code="236" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="68" AmenityType="RA"/>
+                        <hotel:Amenity Code="162" AmenityType="HA"/>
+                        <hotel:Amenity Code="270" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="68" AmenityType="HA"/>
+                        <hotel:Amenity Code="42" AmenityType="HA"/>
+                        <hotel:Amenity Code="107" AmenityType="RA"/>
+                        <hotel:Amenity Code="71" AmenityType="HA"/>
+                        <hotel:Amenity Code="54" AmenityType="HA"/>
+                        <hotel:Amenity Code="77" AmenityType="HA"/>
+                        <hotel:Amenity Code="78" AmenityType="HA"/>
+                        <hotel:Amenity Code="251" AmenityType="RA"/>
+                        <hotel:Amenity Code="85" AmenityType="RA"/>
+                        <hotel:Amenity Code="102" AmenityType="RA"/>
+                        <hotel:Amenity Code="13" AmenityType="RA"/>
+                        <hotel:Amenity Code="264" AmenityType="HA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD75.65" ApproximateMinimumAmount="GBP56.00" MaximumAmount="USD109.00" ApproximateMaximumAmount="GBP80.00"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="HG" VendorLocationID="79474" Key="dq9zVf/pWDKAUGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="HG" HotelCode="79474" HotelLocation="DEN" Name="HOMEWOOD STE DENVER INTL ARPT" VendorLocationKey="dq9zVf/pWDKAUGPKCAAAAA==" HotelTransportation="26" ReserveRequirement="Guarantee" ParticipationLevel="2" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>DENVER CO</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="17" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="227" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="43" AmenityType="HA"/>
+                        <hotel:Amenity Code="236" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="68" AmenityType="RA"/>
+                        <hotel:Amenity Code="59" AmenityType="RA"/>
+                        <hotel:Amenity Code="58" AmenityType="HA"/>
+                        <hotel:Amenity Code="162" AmenityType="HA"/>
+                        <hotel:Amenity Code="269" AmenityType="HA"/>
+                        <hotel:Amenity Code="270" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="68" AmenityType="HA"/>
+                        <hotel:Amenity Code="42" AmenityType="HA"/>
+                        <hotel:Amenity Code="107" AmenityType="RA"/>
+                        <hotel:Amenity Code="71" AmenityType="HA"/>
+                        <hotel:Amenity Code="54" AmenityType="HA"/>
+                        <hotel:Amenity Code="88" AmenityType="RA"/>
+                        <hotel:Amenity Code="78" AmenityType="HA"/>
+                        <hotel:Amenity Code="18" AmenityType="RA"/>
+                        <hotel:Amenity Code="274" AmenityType="HA"/>
+                        <hotel:Amenity Code="102" AmenityType="RA"/>
+                        <hotel:Amenity Code="264" AmenityType="HA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD84.15" ApproximateMinimumAmount="GBP62.00" MaximumAmount="USD219.00" ApproximateMaximumAmount="GBP161.00"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="HY" VendorLocationID="86178" Key="dq9zVf/pWDKAVGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="HY" HotelCode="86178" HotelLocation="DEN" Name="HYATT PLACE DENVER AIRPORT" VendorLocationKey="dq9zVf/pWDKAVGPKCAAAAA==" HotelTransportation="26" ReserveRequirement="Other" ParticipationLevel="2" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>AURORA CO</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="17" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="227" AmenityType="HA"/>
+                        <hotel:Amenity Code="20" AmenityType="HA"/>
+                        <hotel:Amenity Code="913" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="22" AmenityType="RA"/>
+                        <hotel:Amenity Code="159" AmenityType="HA"/>
+                        <hotel:Amenity Code="175" AmenityType="HA"/>
+                        <hotel:Amenity Code="33" AmenityType="HA"/>
+                        <hotel:Amenity Code="38" AmenityType="HA"/>
+                        <hotel:Amenity Code="43" AmenityType="HA"/>
+                        <hotel:Amenity Code="236" AmenityType="HA"/>
+                        <hotel:Amenity Code="47" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="165" AmenityType="HA"/>
+                        <hotel:Amenity Code="174" AmenityType="HA"/>
+                        <hotel:Amenity Code="162" AmenityType="HA"/>
+                        <hotel:Amenity Code="269" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="68" AmenityType="HA"/>
+                        <hotel:Amenity Code="224" AmenityType="HA"/>
+                        <hotel:Amenity Code="107" AmenityType="RA"/>
+                        <hotel:Amenity Code="71" AmenityType="HA"/>
+                        <hotel:Amenity Code="54" AmenityType="HA"/>
+                        <hotel:Amenity Code="106" AmenityType="HA"/>
+                        <hotel:Amenity Code="76" AmenityType="HA"/>
+                        <hotel:Amenity Code="84" AmenityType="HA"/>
+                        <hotel:Amenity Code="274" AmenityType="HA"/>
+                        <hotel:Amenity Code="69" AmenityType="HA"/>
+                        <hotel:Amenity Code="264" AmenityType="HA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD199.00" ApproximateMinimumAmount="GBP146.00" MinAmountRateChanged="false" MaximumAmount="USD229.00" ApproximateMaximumAmount="GBP168.00" MaxAmountRateChanged="false"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="CY" VendorLocationID="E5874" Key="dq9zVf/pWDKAWGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="CY" HotelCode="E5874" HotelLocation="DEN" Name="COURTYARD GATEWAY PRK MARRIOTT" VendorLocationKey="dq9zVf/pWDKAWGPKCAAAAA==" HotelTransportation="26" ReserveRequirement="Other" ParticipationLevel="4" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>4343 AIRPORT WAY</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="17" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="913" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="33" AmenityType="HA"/>
+                        <hotel:Amenity Code="38" AmenityType="HA"/>
+                        <hotel:Amenity Code="47" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="68" AmenityType="RA"/>
+                        <hotel:Amenity Code="58" AmenityType="HA"/>
+                        <hotel:Amenity Code="269" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="68" AmenityType="HA"/>
+                        <hotel:Amenity Code="42" AmenityType="HA"/>
+                        <hotel:Amenity Code="88" AmenityType="RA"/>
+                        <hotel:Amenity Code="76" AmenityType="HA"/>
+                        <hotel:Amenity Code="84" AmenityType="HA"/>
+                        <hotel:Amenity Code="251" AmenityType="RA"/>
+                        <hotel:Amenity Code="18" AmenityType="RA"/>
+                        <hotel:Amenity Code="85" AmenityType="RA"/>
+                        <hotel:Amenity Code="122" AmenityType="RA"/>
+                        <hotel:Amenity Code="102" AmenityType="RA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD134.00" ApproximateMinimumAmount="GBP98.00" MaximumAmount="USD184.00" ApproximateMaximumAmount="GBP135.00"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="AL" VendorLocationID="96767" Key="dq9zVf/pWDKAXGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="AL" HotelCode="96767" HotelLocation="DEN" Name="ALOFT DENVER ARPT GATEWAY PARK" VendorLocationKey="dq9zVf/pWDKAXGPKCAAAAA==" HotelTransportation="26" ReserveRequirement="Guarantee" ParticipationLevel="2" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>AURORA</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="17" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="33" AmenityType="HA"/>
+                        <hotel:Amenity Code="47" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="165" AmenityType="HA"/>
+                        <hotel:Amenity Code="269" AmenityType="HA"/>
+                        <hotel:Amenity Code="68" AmenityType="HA"/>
+                        <hotel:Amenity Code="42" AmenityType="HA"/>
+                        <hotel:Amenity Code="224" AmenityType="HA"/>
+                        <hotel:Amenity Code="71" AmenityType="HA"/>
+                        <hotel:Amenity Code="54" AmenityType="HA"/>
+                        <hotel:Amenity Code="76" AmenityType="HA"/>
+                        <hotel:Amenity Code="92" AmenityType="RA"/>
+                        <hotel:Amenity Code="142" AmenityType="RA"/>
+                        <hotel:Amenity Code="84" AmenityType="HA"/>
+                        <hotel:Amenity Code="18" AmenityType="RA"/>
+                        <hotel:Amenity Code="85" AmenityType="RA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD129.00" ApproximateMinimumAmount="GBP95.00" MaximumAmount="USD154.00" ApproximateMaximumAmount="GBP113.00"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="GI" VendorLocationID="01500" Key="dq9zVf/pWDKAYGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="GI" HotelCode="01500" HotelLocation="DEN" Name="HILTON GARDEN INN DEN AIRPORT" VendorLocationKey="dq9zVf/pWDKAYGPKCAAAAA==" HotelTransportation="7" ReserveRequirement="Guarantee" ParticipationLevel="2" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>AURORA CO</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="17" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="227" AmenityType="HA"/>
+                        <hotel:Amenity Code="913" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="43" AmenityType="HA"/>
+                        <hotel:Amenity Code="45" AmenityType="HA"/>
+                        <hotel:Amenity Code="236" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="68" AmenityType="RA"/>
+                        <hotel:Amenity Code="58" AmenityType="HA"/>
+                        <hotel:Amenity Code="269" AmenityType="HA"/>
+                        <hotel:Amenity Code="270" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="68" AmenityType="HA"/>
+                        <hotel:Amenity Code="42" AmenityType="HA"/>
+                        <hotel:Amenity Code="107" AmenityType="RA"/>
+                        <hotel:Amenity Code="71" AmenityType="HA"/>
+                        <hotel:Amenity Code="54" AmenityType="HA"/>
+                        <hotel:Amenity Code="88" AmenityType="RA"/>
+                        <hotel:Amenity Code="76" AmenityType="HA"/>
+                        <hotel:Amenity Code="78" AmenityType="HA"/>
+                        <hotel:Amenity Code="18" AmenityType="RA"/>
+                        <hotel:Amenity Code="274" AmenityType="HA"/>
+                        <hotel:Amenity Code="102" AmenityType="RA"/>
+                        <hotel:Amenity Code="69" AmenityType="HA"/>
+                        <hotel:Amenity Code="264" AmenityType="HA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD94.05" ApproximateMinimumAmount="GBP69.00" MaximumAmount="USD124.00" ApproximateMaximumAmount="GBP91.00"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="TO" VendorLocationID="53177" Key="dq9zVf/pWDKAZGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="TO" HotelCode="53177" HotelLocation="DEN" Name="TOWNEPLACE STES GATEW MARRIOTT" VendorLocationKey="dq9zVf/pWDKAZGPKCAAAAA==" HotelTransportation="26" ReserveRequirement="Other" ParticipationLevel="4" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>4100 N KITTREDGE ST</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="17" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="913" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="22" AmenityType="HA"/>
+                        <hotel:Amenity Code="23" AmenityType="HA"/>
+                        <hotel:Amenity Code="22" AmenityType="RA"/>
+                        <hotel:Amenity Code="159" AmenityType="HA"/>
+                        <hotel:Amenity Code="33" AmenityType="HA"/>
+                        <hotel:Amenity Code="38" AmenityType="HA"/>
+                        <hotel:Amenity Code="43" AmenityType="HA"/>
+                        <hotel:Amenity Code="47" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="68" AmenityType="RA"/>
+                        <hotel:Amenity Code="59" AmenityType="RA"/>
+                        <hotel:Amenity Code="58" AmenityType="HA"/>
+                        <hotel:Amenity Code="162" AmenityType="HA"/>
+                        <hotel:Amenity Code="269" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="224" AmenityType="HA"/>
+                        <hotel:Amenity Code="71" AmenityType="HA"/>
+                        <hotel:Amenity Code="54" AmenityType="HA"/>
+                        <hotel:Amenity Code="88" AmenityType="RA"/>
+                        <hotel:Amenity Code="78" AmenityType="HA"/>
+                        <hotel:Amenity Code="251" AmenityType="RA"/>
+                        <hotel:Amenity Code="18" AmenityType="RA"/>
+                        <hotel:Amenity Code="85" AmenityType="RA"/>
+                        <hotel:Amenity Code="274" AmenityType="HA"/>
+                        <hotel:Amenity Code="102" AmenityType="RA"/>
+                        <hotel:Amenity Code="13" AmenityType="RA"/>
+                        <hotel:Amenity Code="264" AmenityType="HA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD149.00" ApproximateMinimumAmount="GBP109.00" MaximumAmount="USD259.00" ApproximateMaximumAmount="GBP190.00"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="RC" VendorLocationID="78130" Key="dq9zVf/pWDKAaGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="RC" HotelCode="78130" HotelLocation="DEN" Name="RESIDENCE INN AIRPORT MARRIOTT" VendorLocationKey="dq9zVf/pWDKAaGPKCAAAAA==" HotelTransportation="9" ReserveRequirement="Guarantee" ParticipationLevel="4" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>AURORA CO</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="18" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="227" AmenityType="HA"/>
+                        <hotel:Amenity Code="913" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="46" AmenityType="RC"/>
+                        <hotel:Amenity Code="33" AmenityType="HA"/>
+                        <hotel:Amenity Code="38" AmenityType="HA"/>
+                        <hotel:Amenity Code="41" AmenityType="RA"/>
+                        <hotel:Amenity Code="43" AmenityType="HA"/>
+                        <hotel:Amenity Code="47" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="68" AmenityType="RA"/>
+                        <hotel:Amenity Code="59" AmenityType="RA"/>
+                        <hotel:Amenity Code="58" AmenityType="HA"/>
+                        <hotel:Amenity Code="162" AmenityType="HA"/>
+                        <hotel:Amenity Code="269" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="42" AmenityType="HA"/>
+                        <hotel:Amenity Code="224" AmenityType="HA"/>
+                        <hotel:Amenity Code="107" AmenityType="RA"/>
+                        <hotel:Amenity Code="71" AmenityType="HA"/>
+                        <hotel:Amenity Code="54" AmenityType="HA"/>
+                        <hotel:Amenity Code="88" AmenityType="RA"/>
+                        <hotel:Amenity Code="78" AmenityType="HA"/>
+                        <hotel:Amenity Code="142" AmenityType="RA"/>
+                        <hotel:Amenity Code="251" AmenityType="RA"/>
+                        <hotel:Amenity Code="18" AmenityType="RA"/>
+                        <hotel:Amenity Code="85" AmenityType="RA"/>
+                        <hotel:Amenity Code="274" AmenityType="HA"/>
+                        <hotel:Amenity Code="102" AmenityType="RA"/>
+                        <hotel:Amenity Code="13" AmenityType="RA"/>
+                        <hotel:Amenity Code="264" AmenityType="HA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD139.00" ApproximateMinimumAmount="GBP102.00" MaximumAmount="USD239.00" ApproximateMaximumAmount="GBP175.00"/>
+            </hotel:HotelSearchResult>
+            <hotel:HotelSearchResult>
+                <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="MC" VendorLocationID="97336" Key="dq9zVf/pWDKAbGPKCAAAAA=="/>
+                <hotel:HotelProperty HotelChain="MC" HotelCode="97336" HotelLocation="DEN" Name="DENVER AIRPORT MARRIOTT" VendorLocationKey="dq9zVf/pWDKAbGPKCAAAAA==" HotelTransportation="26" ReserveRequirement="Guarantee" ParticipationLevel="4" Availability="Available">
+                    <hotel:PropertyAddress>
+                        <hotel:Address>AURORA CO</hotel:Address>
+                    </hotel:PropertyAddress>
+                    <common_v50_0:Distance Units="KM" Value="18" Direction="SW"/>
+                    <hotel:Amenities>
+                        <hotel:Amenity Code="5" AmenityType="HA"/>
+                        <hotel:Amenity Code="7" AmenityType="RA"/>
+                        <hotel:Amenity Code="51" AmenityType="RA"/>
+                        <hotel:Amenity Code="913" AmenityType="HA"/>
+                        <hotel:Amenity Code="228" AmenityType="HA"/>
+                        <hotel:Amenity Code="22" AmenityType="HA"/>
+                        <hotel:Amenity Code="23" AmenityType="HA"/>
+                        <hotel:Amenity Code="22" AmenityType="RA"/>
+                        <hotel:Amenity Code="33" AmenityType="HA"/>
+                        <hotel:Amenity Code="38" AmenityType="HA"/>
+                        <hotel:Amenity Code="43" AmenityType="HA"/>
+                        <hotel:Amenity Code="47" AmenityType="HA"/>
+                        <hotel:Amenity Code="48" AmenityType="HA"/>
+                        <hotel:Amenity Code="58" AmenityType="HA"/>
+                        <hotel:Amenity Code="165" AmenityType="HA"/>
+                        <hotel:Amenity Code="174" AmenityType="HA"/>
+                        <hotel:Amenity Code="269" AmenityType="HA"/>
+                        <hotel:Amenity Code="74" AmenityType="RA"/>
+                        <hotel:Amenity Code="224" AmenityType="HA"/>
+                        <hotel:Amenity Code="107" AmenityType="RA"/>
+                        <hotel:Amenity Code="71" AmenityType="HA"/>
+                        <hotel:Amenity Code="54" AmenityType="HA"/>
+                        <hotel:Amenity Code="88" AmenityType="RA"/>
+                        <hotel:Amenity Code="76" AmenityType="HA"/>
+                        <hotel:Amenity Code="78" AmenityType="HA"/>
+                        <hotel:Amenity Code="271" AmenityType="HA"/>
+                        <hotel:Amenity Code="142" AmenityType="RA"/>
+                        <hotel:Amenity Code="251" AmenityType="RA"/>
+                        <hotel:Amenity Code="18" AmenityType="RA"/>
+                        <hotel:Amenity Code="85" AmenityType="RA"/>
+                        <hotel:Amenity Code="274" AmenityType="HA"/>
+                        <hotel:Amenity Code="102" AmenityType="RA"/>
+                        <hotel:Amenity Code="13" AmenityType="RA"/>
+                        <hotel:Amenity Code="264" AmenityType="HA"/>
+                    </hotel:Amenities>
+                </hotel:HotelProperty>
+                <hotel:RateInfo MinimumAmount="USD159.00" ApproximateMinimumAmount="GBP117.00" MaximumAmount="USD259.00" ApproximateMaximumAmount="GBP190.00"/>
+            </hotel:HotelSearchResult>
+        </hotel:HotelSearchAvailabilityRsp>
+    </SOAP:Body>
+</SOAP:Envelope>
